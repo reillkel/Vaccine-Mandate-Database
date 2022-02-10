@@ -1,5 +1,5 @@
 from flask import Flask, render_template, json, redirect
-from flask_mysqldb import MySQL
+#from flask_mysqldb import MySQL
 from flask import request
 import os
 
@@ -12,7 +12,7 @@ app.config['MYSQL_DB'] = 'cs340_wozniakr'
 app.config['MYSQL_CURSORCLASS'] = "DictCursor"
 
 
-mysql = MySQL(app)
+#mysql = MySQL(app)
 
 
 # Routes

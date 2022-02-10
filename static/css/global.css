@@ -32,3 +32,21 @@ body {
     font-size: 16px;
     margin-left: 20px;
 }
+
+/* Entity Forms & Tables */
+.add-entity {
+    width: 300px;
+    line-height: 25px;
+    font-size: 16px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.entity-table {
+    margin: auto;
+    border-collapse: collapse;
+}
+.entity-table th, td {
+    padding: 10px;
+    border: 1px solid grey;
+}

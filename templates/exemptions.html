@@ -5,5 +5,35 @@
 {% endblock %}
 
 {% block body %}
-
+<h1 class="page-title">Exemptions</h1>
+<form>
+    <fieldset class="add-entity">
+        <legend>Add Exemption</legend>
+        <label for="exemptionid">Exemption ID: </label>
+        <input type="text" id="exemptionid"/>
+        <br>
+        <label>Status: </label>
+        <input type="radio" id="true" value="1">
+        <label for="true">has exemption</label>
+        <input type="radio" id="false" value="0">
+        <label for="false">no exemption</label><br>
+        <label for="type">Exemption Type: </label>
+        <input type="text" id="type"/><br>
+        <input type="submit" id="exemption-submit">
+    </fieldset>
+</form>
+<table class="entity-table">
+    <thead>
+        <th>ID</th>
+        <th>Status</th>
+        <th>Type</th>
+        <th></th>
+    </thead>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>Medical</td>
+        <td><button>Delete</button></td>
+    </tr>
+</table>
 {% endblock %}

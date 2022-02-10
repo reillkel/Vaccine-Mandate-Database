@@ -5,5 +5,51 @@
 {% endblock %}
 
 {% block body %}
-
+<h1 class="page-title">Employees</h1>
+<form>
+    <fieldset class="add-entity">
+        <legend>Add Employee</legend>
+        <label for="fname">First Name: </label>
+        <input type="text" id="fname"/>
+        <br>
+        <label for="lname">Last Name: </label>
+        <input type="text" id="lname"/>
+        <br>
+        <label for="birthdate">Birthdate: </label>
+        <input type="date" id="birthdate"/>
+        <br>
+        <label>Termed: </label>
+        <input type="radio" id="true" value="1">
+        <label for="true">True</label>
+        <input type="radio" id="false" value="0">
+        <label for="false">False</label><br>
+        <label for="site">Site ID: </label>
+        <input type="text" id="site"/><br>
+        <label for="exemption">Exemption ID: </label>
+        <input type="text" id="exemption"/><br>
+        <input type="submit" id="employee-submit">
+    </fieldset>
+</form>
+<table class="entity-table">
+    <thead>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Birthdate</th>
+        <th>Termed</th>
+        <th>Site ID</th>
+        <th>Exemption ID</th>
+        <th></th>
+    </thead>
+    <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>Doe</td>
+        <td>1990-01-01</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td><button>Update</button><button>Delete</button></td>
+    </tr>
+</table>
 {% endblock %}

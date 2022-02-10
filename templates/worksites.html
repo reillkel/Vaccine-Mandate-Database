@@ -5,5 +5,43 @@
 {% endblock %}
 
 {% block body %}
+<h1 class="page-title">Worksites</h1>
+<form>
+    <fieldset class="add-entity">
+        <legend>Add Worksite</legend>
+        <label for="siteid">Site Id: </label>
+        <input type="text" id="siteid"/>
+        <br>
+        <label for="location">Location: </label>
+        <input type="text" id="location"/>
+        <br>
+        <label for="department">Department: </label>
+        <input type="text" id="department"/>
+        <br>
+        <label for="managerf">Manager First Name: </label>
+        <input type="text" id="managerf"/>
+        <br>
+        <label for="managerl">Manager Last Name: </label>
+        <input type="text" id="managerl"/>
+        <br>
+        <input type="submit" id="worksite-submit">
+    </fieldset>
+</form>
+<table class="entity-table">
+    <thead>
+        <th>ID</th>
+        <th>Location</th>
+        <th>Department</th>
+        <th>Manager First Name</th>
+        <th>Manager Last Name</th>
+    </thead>
+    <tr>
+        <td>1</td>
+        <td>Chesterfield</td>
+        <td>Distribution</td>
+        <td>John</td>
+        <td>Doe</td>
+    </tr>
+</table>
 
 {% endblock %}
