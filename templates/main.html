@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/css/global.css">
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        <div id="navbar">
+            <a href="/" class="nav">Index</a>
+            <a href="/employees" class="nav">Employees</a>
+            <a href="/worksites" class="nav">Worksites</a>
+            <a href="/exemptions" class="nav">Exemptions</a>
+            <a href="/vaccines" class="nav">Vaccines</a>
+            <a href="/employees_vaccines" class="nav">Employees-Vaccines</a>
+        </div>
+        {% block body %}{%endblock %}
+    </body>
+</html>

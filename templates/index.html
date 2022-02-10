@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+
+{% block head %}
+<title>Index | Covid-19 Vaccine Mandate Database</title>
+{% endblock %}
+
+{% block body %}
+
+<h1 class="page-title">Covid-19 Vaccine Mandate Database Index</h1>
+<p class="description">Welcome to the Covid-19 Vaccine Mandate Database.</p>
+<ul id="nav-list">
+    <li><a href="/employees" class="page-link">Employees</a>
+        <p class="page-desc">Add, Update, Delete, or View Employees.</p>
+    </li>
+    <li><a href="/worksites" class="page-link">Worksites</a>
+        <p class="page-desc">Add or View Worksites.</p>
+    </li>
+    <li><a href="/exemptions" class="page-link">Exemptions</a>
+        <p class="page-desc">Add, Update, or View Exemptions.</p>
+    </li>
+    <li><a href="/vaccines" class="page-link">Vaccines</a>
+        <p class="page-desc">Add or View Vaccines.</p>
+    </li>
+    <li><a href="/employees_vaccines" class="page-link">Employees-Vaccines</a>
+        <p class="page-desc">Add, Delete, or View Employees-Vaccines</p>
+    </li>
+</ul>
+
+{% endblock %}
