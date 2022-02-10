@@ -4,13 +4,13 @@ body {
 }
 
 .page-title {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
 }
 
 .description {
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -18,13 +18,12 @@ body {
 #navbar {
     min-width: 100vw;
     height: 60px;
-    position: absolute;
+    margin-left: 10px;
     
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 15px;
-    margin-bottom: 10px;
 }
 
 .nav {
