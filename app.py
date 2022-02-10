@@ -41,7 +41,7 @@ def exemptions():
 def vaccines():
     return render_template("vaccines.html")
 
-@app.route('employees_vaccines')
+@app.route('/employees_vaccines')
 def employees_vaccines():
     return render_template("employees_vaccines.html")
 
