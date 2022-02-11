@@ -54,3 +54,10 @@ body {
 .entity-table tr:nth-child(even) {
     background-color: #cecece;
 }
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
