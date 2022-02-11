@@ -19,14 +19,19 @@
         <input type="date" id="birthdate"/>
         <br>
         <label>Termed: </label>
-        <input type="radio" id="true" value="1">
+        <input type="radio" id="true" name="termed" value="1">
         <label for="true">True</label>
-        <input type="radio" id="false" value="0">
+        <input type="radio" id="false" name="termed" value="0">
         <label for="false">False</label><br>
-        <label for="site">Site ID: </label>
-        <input type="text" id="site"/><br>
-        <label for="exemption">Exemption ID: </label>
-        <input type="text" id="exemption"/><br>
+        <label>Site ID: </label>
+        <select name="site">
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select><br>
+        <label>Exemption ID: </label>
+        <select name="exemption">
+            <option value="1">1</option>
+        </select><br>
         <input type="submit" id="employee-submit">
     </fieldset>
 </form>
