@@ -50,3 +50,7 @@ body {
     padding: 10px;
     border: 1px solid grey;
 }
+
+.entity-table tr:nth-child(even) {
+    background-color: #cecece;
+}
