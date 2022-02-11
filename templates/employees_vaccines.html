@@ -5,5 +5,48 @@
 {% endblock %}
 
 {% block body %}
-
+<h1 class="page-title">Employees-Vaccines</h1>
+<form>
+    <fieldset class="add-entity">
+        <legend>Add Employee-Vaccine</legend>
+        <label for="empid">Employee ID: </label>
+        <input type="text" id="empid"/>
+        <br>
+        <label for="vaccid">Vaccine ID: </label>
+        <input type="text" id="vaccid"/>
+        <br>
+        <label for="date">Date Administered: </label>
+        <input type="date" id="date"/>
+        <br>
+        <label>Dose: </label>
+        <input type="radio" id="1" value="1">
+        <label for="1">1st</label>
+        <input type="radio" id="2" value="2">
+        <label for="2">2</label>
+        <input type="radio" id="3" value="3">
+        <label for="3">Booster</label>
+        <input type="radio" id="0" value="0">
+        <label for="0">Unknown</label>
+        <br>
+        <input type="submit" id="emp_vacc-submit">
+    </fieldset>
+</form>
+<table class="entity-table">
+    <thead>
+        <th>ID</th>
+        <th>Employee ID</th>
+        <th>Vaccine ID</th>
+        <th>Date Administered</th>
+        <th>Dose</th>
+        <th></th>
+    </thead>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2022-01-01</td>
+        <td>1</td>
+        <td><button>Delete</button></td>
+    </tr>
+</table>
 {% endblock %}

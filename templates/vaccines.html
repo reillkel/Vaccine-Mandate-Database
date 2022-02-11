@@ -5,5 +5,30 @@
 {% endblock %}
 
 {% block body %}
-
+<h1 class="page-title">Vaccines</h1>
+<form>
+    <fieldset class="add-entity">
+        <legend>Add Vaccine</legend>
+        <label for="vaccineid">Vaccine ID: </label>
+        <input type="text" id="vaccineid"/>
+        <br>
+        <label for="name">Vaccine Name: </label>
+        <input type="text" id="name"/><br>
+        <input type="submit" id="vaccine-submit">
+    </fieldset>
+</form>
+<table class="entity-table">
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+    </thead>
+    <tr>
+        <td>1</td>
+        <td>Pfizer</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Moderna</td>
+    </tr>
+</table>
 {% endblock %}
